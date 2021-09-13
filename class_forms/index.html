@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <form action="">
+            <label for="nombre">
+                <span>¿Cuál es tu nombre?</span>
+                <input type="text" id="nombre" name="nombre" autocomplete="name" required>
+            </label>
+            <label for="pais">
+                <span>¿De que pais eres?</span>
+                <input type="text" id="pais" name="pais" autocomplete="country" required>
+            </label>
+            <label for="email">
+                <span>¿Cuál es tu telefono?</span>
+                <input type="email" id="email" name="email" autocomplete="email" required>
+            </label>
+            <input type="submit">
+        </form>
+        <input list="cursos">
+        <datalist id="cursos">
+            <option value="Java"></option>
+            <option value="JavaScript"></option>
+            <option value="Pyhon"></option>
+            <option value="PHP"></option>
+            <option value="HTML"></option>
+        </datalist>
+    </main>
+</body>
+</html>
