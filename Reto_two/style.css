@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#second {
+    background-color:darkolivegreen;
+    width: 30%;
+    height: 70px;
+    margin: 0 auto;
+    border-radius: 20px;
+    position: relative;
+    top: 40px;
+}
+
+#first {
+    background-color: lightsteelblue;
+    width: 60%;
+    height: 600px;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+
+h1{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    -webkit-text-stroke: 1px black;
+}
+
+.info{
+    position: relative;
+    top: 100px;
+}
+
+img{
+    width: 200px;
+    position: relative;
+    left: 40%;
+}
