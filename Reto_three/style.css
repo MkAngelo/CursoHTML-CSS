@@ -4,11 +4,15 @@
     padding: 0;
 }
 html{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .nav{
-    background-color: cornflowerblue;
+    background-color:darkcyan;
     padding: 10px;
+}
+#nav-logo{
+    width: 25px;
+    position: relative;
 }
 .nav li{
     display: inline-block;
@@ -18,17 +22,33 @@ html{
     padding-right: 10px;
 }
 .ads{
-    border: 10px black;
-    position: absolute;
+    background-color:darkslategray;
+    position: fixed;
+    left: 0;
+    width: 15%;
+    height: 100%;
 }
 .box {
+    background-color:darkseagreen;
+    border-radius: 20px;
     display: block;
-    background-color: darkgray;
-    width: 100px;
-    height: 100px;
+    padding: 10px;
+    margin: 10px;
+    width: 200px;
+    height: 70px;
+    position: relative;
 }
+.content{
+    background-color: lightgrey;
+    position: fixed;
+    right: 0;
+    width: 85%;
+    height: 100%;
+    display: block;
+}
+
 .networks{
-    background-color: lightgoldenrodyellow;
+    background-color: yellow;
     text-align: center;
     position: fixed;
     left: 0;
@@ -42,4 +62,56 @@ html{
     margin: 10px 0;
     padding-left: 10px;
     padding-right: 10px;
+}
+.bubble {
+    position: relative;
+    top: 10px;
+    left: 10px;
+    font-family: sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    width: 500px;
+    background: #fff;
+    border-radius: 40px;
+    padding: 24px;
+    text-align: left;
+    color: #000;
+} 
+.bubble-bottom-left:before {
+content: "";
+width: 0px;
+height: 0px;
+position: absolute;
+border-left: 24px solid #fff;
+border-right: 12px solid transparent;
+border-top: 12px solid #fff;
+border-bottom: 20px solid transparent;
+left: 32px;
+bottom: -24px;
+}
+
+.bubble-r {
+    position: fixed;
+    right: 10px;
+    font-family: sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    width: 500px;
+    background: lightseagreen;
+    border-radius: 40px;
+    padding: 24px;
+    text-align: left;
+    color: #fff;
+}
+.bubble-bottom-right:before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-left: 24px solid transparent;
+    border-right: 12px solid lightseagreen;
+    border-top: 12px solid lightseagreen;
+    border-bottom: 20px solid transparent;
+    right: 32px;
+    bottom: -24px;
 }
